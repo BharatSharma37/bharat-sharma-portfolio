@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #0D0D0D;
+  }
+  
+  body {
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: 'Manrope', 'Inter', -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C7FF2F;
+  }
+}
+
+/* Background digital grid pattern */
+.bg-grid-agency {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Dark Green Ambient Atmospheric Glow */
+.bg-ambient-glow {
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(11, 33, 18, 0.45), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 90% 40%, rgba(7, 20, 11, 0.35), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 10% 80%, rgba(11, 33, 18, 0.35), transparent 70%);
+}
+
+.glass-card {
+  background: rgba(17, 17, 17, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(199, 255, 47, 0.35);
+  background: rgba(22, 22, 22, 0.85);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(199, 255, 47, 0.08);
+}
+
+.glass-navbar {
+  background: rgba(13, 13, 13, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-navbar.scrolled {
+  background: rgba(13, 13, 13, 0.92);
+  border-bottom: 1px solid rgba(199, 255, 47, 0.12);
+}
+
+/* Neon lime border highlight */
+.border-lime-subtle {
+  border-color: rgba(199, 255, 47, 0.2);
+}
+
+.glow-text-lime {
+  text-shadow: 0 0 20px rgba(199, 255, 47, 0.35);
+}
+
+/* Accessibility & Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
