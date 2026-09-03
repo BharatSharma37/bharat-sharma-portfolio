@@ -3,13 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-    "homepage": "https://github.com/BharatSharma37/bharat-sharma-portfolio",
+  "homepage": "https://BharatSharma37.github.io/bharat-sharma-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
@@ -23,13 +23,8 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.1"
   }
-  
-
-}   
-
-
+}

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#0D0D0D" />
-  <rect x="2" y="2" width="96" height="96" rx="18" fill="none" stroke="#0B2112" stroke-width="2" />
-  <text x="50" y="65" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="44" font-weight="700" fill="#F5F5F5" text-anchor="middle" letter-spacing="-1">BS</text>
-  <circle cx="78" cy="34" r="6" fill="#C7FF2F" />
-</svg>
