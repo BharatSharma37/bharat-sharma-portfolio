@@ -1,0 +1,5 @@
+[build]
+  # Install dependencies only if the vite binary is missing or not executable,
+  # then build. On regular Netlify CI builds dependencies are already installed.
+  command = "(test -x node_modules/.bin/vite || npm ci --include=dev --no-audit --no-fund) && npm run build"
+  publish = "dist"
